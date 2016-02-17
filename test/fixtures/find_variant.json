@@ -1,0 +1,592 @@
+{
+  "meta": {
+    "current_page": "1",
+    "last_page": "1",
+    "per_page": "15",
+    "total": "1",
+    "from": "1",
+    "to": "1"
+  },
+  "Variants": [
+    {
+      "auto_description": "1.75mm ABS 1KG Spooled Filament (Black)",
+      "auto_description_with_option_type": "1.75mm ABS 1KG Spooled Filament (Color: Black)",
+      "available": "95",
+      "average_cost": "0.0000",
+      "bundle": "0",
+      "committed_stock": "5",
+      "component": "0",
+      "consignment": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "description": "",
+      "drop_shippable": "0",
+      "id": "229617792",
+      "links": {
+        "AttributeOptions": [
+          {
+            "id": "297805352"
+          }
+        ],
+        "ContactWarehouses": [],
+        "Contacts": [
+          {
+            "id": "2430370",
+            "product_sku_id": "229617792",
+            "company_id": "246454934",
+            "cost": null,
+            "quantity": "0",
+            "supplier_id": "",
+            "drop_shippable": "0",
+            "primary_supplier": null
+          }
+        ],
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ],
+        "ProductFiles": [],
+        "VariantCustomIds": [
+          {
+            "id": "545839418"
+          }
+        ],
+        "VariantPrices": [
+          {
+            "id": "242255130"
+          }
+        ],
+        "WarehouseStockLevels": [
+          {
+            "id": "130542830"
+          }
+        ]
+      },
+      "local_id": "3767",
+      "location_1": "",
+      "low_stock_alert": null,
+      "notes": "",
+      "primary_supplier": "0",
+      "reorder_awaiting_stock": "0",
+      "reorder_stock": "0",
+      "sku": "MSF1A-BK",
+      "sort_order": "0",
+      "stock": "100",
+      "supplier_cost": "0.0000",
+      "supplier_id": "",
+      "total_revenue": "399.90",
+      "total_sold": "10",
+      "upc": null,
+      "updated_at": "2016-02-16T16:40:09+00:00",
+      "weight": "3.1504"
+    }
+  ],
+  "Attributes": {
+    "86943484": {
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "id": "86943484",
+      "links": {
+        "AttributeOptions": [
+          {
+            "id": "297805352"
+          }
+        ],
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "name": "Color",
+      "order": "0",
+      "updated_at": "2016-02-16T16:40:09+00:00"
+    }
+  },
+  "AttributeOptions": {
+    "297805352": {
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "id": "297805352",
+      "links": {
+        "Attributes": [
+          {
+            "id": "86943484"
+          }
+        ],
+        "Variants": [
+          {
+            "id": "229617792"
+          }
+        ]
+      },
+      "name": "Black",
+      "updated_at": "2016-02-16T16:40:09+00:00"
+    }
+  },
+  "Contacts": {
+    "246454934": {
+      "archived": "0",
+      "created_at": "2016-02-09T20:38:39+00:00",
+      "deleted": "0",
+      "id": "246454934",
+      "links": {
+        "Variants": [
+          {
+            "id": "229617792"
+          }
+        ]
+      },
+      "local_id": "1018",
+      "name": "Julio @Warehouse",
+      "nature": "",
+      "notes": "",
+      "reseller": "",
+      "taxid": "",
+      "updated_at": "2016-02-09T20:41:43+00:00",
+      "website": "https://github.com/julionc"
+    }
+  },
+  "ProductFiles": {
+    "159572656": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-YLW-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-YLW-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-YLW-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572656",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-YLW-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572670": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-BK-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-BK-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-BK-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572670",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-BK-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572684": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-RD-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-RD-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-RD-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572684",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-RD-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572698": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-LBL-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-LBL-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-LBL-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572698",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-LBL-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572712": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-YLW-1.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-YLW-1.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-YLW-1.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572712",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-YLW-1.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572726": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-BWN-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-BWN-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-BWN-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572726",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-BWN-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572740": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-NA-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-NA-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-NA-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572740",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-NA-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572754": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-LGN-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-LGN-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-LGN-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572754",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-LGN-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572768": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-WH-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-WH-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-WH-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572768",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-WH-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572782": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-SLV-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-SLV-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-SLV-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572782",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-SLV-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572796": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-PUR-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-PUR-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-PUR-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572796",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-PUR-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    },
+    "159572810": {
+      "cdn_original": "[{\"public_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-NOR-0.jpeg\",\"public_ssl_uri\":\"https://cdn.shopify.com/s/files/1/1007/5916/products/MSF1A-NOR-0.jpeg\",\"actual\":{\"W\":1000,\"H\":700}}]",
+      "cdn_resized": null,
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "file_name": "MSF1A-NOR-0.jpeg",
+      "file_type": "image/jpeg",
+      "id": "159572810",
+      "links": {
+        "Products": [
+          {
+            "id": "114390204"
+          }
+        ]
+      },
+      "orig_file_name": "MSF1A-NOR-0.jpeg",
+      "resize_count": "0",
+      "size": "0",
+      "updated_at": "2016-02-08T23:42:41+00:00"
+    }
+  },
+  "Products": {
+    "114390204": {
+      "archived": "0",
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "description": "",
+      "id": "114390204",
+      "links": {
+        "Attributes": [
+          {
+            "id": "86943484"
+          }
+        ],
+        "ProductFiles": [
+          {
+            "id": "159572656"
+          },
+          {
+            "id": "159572670"
+          },
+          {
+            "id": "159572684"
+          },
+          {
+            "id": "159572698"
+          },
+          {
+            "id": "159572712"
+          },
+          {
+            "id": "159572726"
+          },
+          {
+            "id": "159572740"
+          },
+          {
+            "id": "159572754"
+          },
+          {
+            "id": "159572768"
+          },
+          {
+            "id": "159572782"
+          },
+          {
+            "id": "159572796"
+          },
+          {
+            "id": "159572810"
+          }
+        ],
+        "Variants": [
+          {
+            "id": "229617792"
+          }
+        ]
+      },
+      "local_id": "2925",
+      "name": "1.75mm ABS 1KG Spooled Filament",
+      "notes": "Store URL: http://teclalabs.myshopify.com/products/1-75mm-abs-1kg-spooled-filament",
+      "updated_at": "2016-02-16T16:40:10+00:00"
+    }
+  },
+  "CustomIdTypes": {
+    "1535462": {
+      "caption": "",
+      "created_at": "2016-02-08T22:57:11+00:00",
+      "deleted": "0",
+      "id": "1535462",
+      "links": {
+        "VariantCustomIds": [
+          {
+            "id": "545839418"
+          }
+        ]
+      },
+      "name": "SKU",
+      "updated_at": "2016-02-08T22:57:11+00:00"
+    }
+  },
+  "VariantCustomIds": {
+    "545839418": {
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "id": "545839418",
+      "links": {
+        "CustomIdTypes": [
+          {
+            "id": "1535462"
+          }
+        ],
+        "Variants": [
+          {
+            "id": "229617792"
+          }
+        ]
+      },
+      "sku_id": "229617792",
+      "updated_at": "2016-02-16T16:40:09+00:00",
+      "value": "MSF1A-BK"
+    }
+  },
+  "PricingTiers": {
+    "1376436": {
+      "caption": "",
+      "created_at": "2016-02-08T23:34:28+00:00",
+      "deleted": "0",
+      "id": "1376436",
+      "links": {
+        "VariantPrices": [
+          {
+            "id": "242255130"
+          }
+        ]
+      },
+      "name": "Shopify",
+      "updated_at": "2016-02-08T23:34:28+00:00"
+    }
+  },
+  "VariantPrices": {
+    "242255130": {
+      "created_at": "2016-02-08T23:42:41+00:00",
+      "deleted": "0",
+      "id": "242255130",
+      "links": {
+        "PricingTiers": [
+          {
+            "id": "1376436"
+          }
+        ],
+        "Variants": [
+          {
+            "id": "229617792"
+          }
+        ]
+      },
+      "price": "39.99",
+      "updated_at": "2016-02-16T16:40:09+00:00"
+    }
+  },
+  "AccountAddresses": {
+    "74142": {
+      "billing": "0",
+      "channel_warehouse": "0",
+      "city": null,
+      "company": null,
+      "connector_address_id": null,
+      "connector_id": null,
+      "connector_id_2": null,
+      "contact": null,
+      "country": null,
+      "country_iso": null,
+      "created_at": "2016-02-09T04:12:46+00:00",
+      "default_warehouse": "1",
+      "deleted": "0",
+      "fax": null,
+      "id": "74142",
+      "label": "My Default Warehouse",
+      "links": {
+        "WarehouseStockLevels": [
+          {
+            "id": "130542830"
+          }
+        ]
+      },
+      "phone": null,
+      "shipping": "0",
+      "state": null,
+      "street1": null,
+      "street2": null,
+      "updated_at": "2016-02-09T04:12:46+00:00",
+      "warehouse": "1",
+      "zip": null
+    }
+  },
+  "WarehouseStockLevels": {
+    "130542830": {
+      "account_address_id": "74142",
+      "available": "95",
+      "deleted": "0",
+      "id": "130542830",
+      "links": {
+        "AccountAddresses": [
+          {
+            "id": "74142",
+            "type": "account_address"
+          }
+        ],
+        "Variants": [
+          {
+            "id": "229617792"
+          }
+        ]
+      },
+      "low_stock_alert": null,
+      "stock": "100",
+      "updated_at": "2016-02-16T16:40:09+00:00"
+    }
+  }
+}
