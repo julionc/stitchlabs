@@ -8,41 +8,33 @@ module Stitchlabs
 
     def self.find_by_sku(sku)
       body = {
-        "action": "read",
-        "filter": {
-          "and": [{
-            "sku": sku.to_s
+        "action" => "read",
+        "filter" => {
+          "and" =>  [{
+            "sku" => sku.to_s
           }]
         }
       }
-
-      #byebug
 
       @response = Base::stitch_request('api2/v2/Variants', body)
 
       data = JSON.parse(@response)
 
-      puts "response: "
-      puts @response
-      puts  "------"
-
       exist_data = data['Variants'].count
 
-      if exist_data > 0
-        variant = data['Variants'].first
-        account_address_id = data['AccountAddresses'].first[0]
+      return nil if exist_data == 0
 
-        @variant = Variant.new
-        @variant.variant_id = variant['id']
-        @variant.sku = variant['sku']
-        @variant.account_address_id = account_address_id
+      variant = data['Variants'].first
+      account_address_id = data['AccountAddresses'].first[0]
 
-        return @variant
+      @variant = Variant.new
+      @variant.variant_id = variant['id']
+      @variant.sku = variant['sku']
+      @variant.account_address_id = account_address_id
 
-      end # exist_data
-      return nil
+      return @variant
 
-    end
+    end # exist_data
 
     def update_amount(amount)
       body = {
@@ -50,7 +42,7 @@ module Stitchlabs
         'Variants' => [{
           'id' => @variant_id,
           'links' => {
-            'ReconcileInventory': [{
+            'ReconcileInventory' => [{
               'change' => 'set_available',
               'units' => amount,
               'links' => {

@@ -8,7 +8,7 @@ module Stitchlabs
       #byebug
       stitch_api_url = Stitchlabs.configuration.api_url
       stitch_endpoint_url = "#{stitch_api_url}/#{url}"
-      puts "URL: #{stitch_endpoint_url}"
+      #puts "URL: #{stitch_endpoint_url}"
 
       headers = {
         "access_token" => Stitchlabs.configuration.token,
