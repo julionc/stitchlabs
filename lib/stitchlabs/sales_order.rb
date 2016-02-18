@@ -2,9 +2,9 @@ require 'json'
 
 module Stitchlabs
 
-  class SaleOrder < Stitchlabs::Base
+  class SalesOrder < Stitchlabs::Base
 
-    def self.get_open_orders(page_num=1)
+    def self.get_open_sales_orders_ids(page_num=1)
       @page_size = 50
       @page_num = page_num || 1
 
@@ -31,14 +31,35 @@ module Stitchlabs
 
       @response = Base::stitch_request('api2/v2/SalesOrders', body)
 
-      data =JSON.parse(@response)
+      data = JSON.parse(@response)
       exist_data = data['SalesOrders'].count
 
       return nil if exist_data == 0
 
-      @sale_orders = data['SalesOrders'] 
+      sales_orders = data['SalesOrders']
+      sales_orders_ids = sales_orders.map { |order| order['id'] }
+      return sales_orders_ids
+    end # get_open_sales_orders_ids
 
-    end # get_open_orders
+    def self.find_by_id(sales_order_id)
+      body = {
+        "action" => "read",
+        "SalesOrders" => [
+          {
+            "id" =>  sales_order_id
+          }
+        ]
+      }
+
+      @response = Base::stitch_request('api2/v2/SalesOrders/detail', body)
+
+      data = JSON.parse(@response)
+      exist_data = data['SalesOrders'].count
+
+      return nil if exist_data == 0
+      return data
+
+    end # find_by
 
   end
 end
