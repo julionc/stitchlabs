@@ -1,25 +1,21 @@
 module Stitchlabs
-
-  class Variant < Stitchlabs::Base
-
+  class Variant < Stitchlabs::Base # :nodoc:
     attr_accessor :variant_id
     attr_accessor :sku
     attr_accessor :account_address_id
 
     def self.find_by_sku(sku)
       body = {
-        "action" => "read",
-        "filter" => {
-          "and" =>  [{
-            "sku" => sku.to_s
+        action: 'read',
+        filter: {
+          and: [{
+            sku: sku.to_s
           }]
         }
       }
-
       @response = Base::stitch_request('api2/v2/Variants', body)
 
       data = JSON.parse(@response)
-
       exist_data = data['Variants'].count
 
       return nil if exist_data == 0
@@ -31,23 +27,21 @@ module Stitchlabs
       @variant.variant_id = variant['id']
       @variant.sku = variant['sku']
       @variant.account_address_id = account_address_id
-
-      return @variant
-
+      @variant
     end # exist_data
 
     def update_amount(amount)
       body = {
-        'action' => 'write',
+        action: 'write',
         'Variants' => [{
-          'id' => @variant_id,
-          'links' => {
+          id: @variant_id,
+          links: {
             'ReconcileInventory' => [{
-              'change' => 'set_available',
-              'units' => amount,
-              'links' => {
+              change: 'set_available',
+              units: amount,
+              links: {
                 'AccountAddresses' => [{
-                  'id' => @account_address_id # "My Default Warehouse"
+                  id: @account_address_id # "My Default Warehouse"
                 }]
               }
             }] # ReconcileInventory
@@ -56,6 +50,5 @@ module Stitchlabs
       }
       @response = Base::stitch_request('api2/v1/Variants/detail', body)
     end
-
   end
 end

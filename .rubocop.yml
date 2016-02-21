@@ -1,0 +1,27 @@
+AllCops:
+  Exclude:
+    - bin/*
+    - db/*
+    - lib/stitchlabs/engine.rb
+    - test/dummy/**/*
+    - test/test_helper.rb
+    - Rakefile
+
+Style/Documentation:
+  Exclude:
+    - 'test/**/*'
+
+Style/NumericLiterals:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 99
+
+Metrics/MethodLength:
+  Max: 30
+
+MethodLength:
+  Max: 20
+
+ColonMethodCall:
+  Enabled: false

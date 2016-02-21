@@ -1,6 +1,5 @@
 module Stitchlabs
-  class Configuration
-
+  class Configuration # :nodoc:
     # Settings.
     # `config/initializers/stitchlabs.rb`
     attr_accessor :client_id
@@ -9,17 +8,4 @@ module Stitchlabs
     attr_accessor :site
     attr_accessor :api_url
   end
-
-  def self.configuration
-    @configuration ||= Configuration.new
-  end
-
-  def self.configuration=(config)
-    @configuration = config
-  end
-
-  def self.configure
-    yield configuration
-  end
-
 end
