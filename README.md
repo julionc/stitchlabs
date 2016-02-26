@@ -33,7 +33,7 @@ sales_orders_ids = Stitchlabs::SalesOrder.open_sales_orders_ids
 
 Get a Sales Order by Id.
 ```ruby
-Stitchlabs::SalesOrder.find_by_id(123456)
+sale_order = Stitchlabs::SalesOrder.find_by_id(123456)
 ```
 
 ### Variants
@@ -41,12 +41,29 @@ Stitchlabs::SalesOrder.find_by_id(123456)
 Get a variant by SKU given.
 ```ruby
 @sku = MKUM1-KT # Ultimaker 3D Printer
-Stitchlabs::Variant.find_by_sku(@sku)
+variant = Stitchlabs::Variant.find_by_sku(@sku)
 ```
 
 Set the variant amount.
 ```ruby
 @sku = MSRPIK2 # Make: Raspberry Pi B Starter Kit
 @variant = Stitchlabs::Variant.find_by_sku(@sku)
-update = @variant.update_amount(100) # units
+@variant.update_amount(100) # units
 ```
+
+### Packing Slips
+
+Create  a Packing Slip (To add the tracking number)
+
+```ruby
+
+sale_order = Stitchlabs::SalesOrder.find_by_id(123456)
+
+
+@sku = MSRPIK2 # Make: Raspberry Pi B Starter Kit
+@variant = Stitchlabs::Variant.find_by_sku(@sku)
+@variant.update_amount(100) # units
+```
+
+
+### 

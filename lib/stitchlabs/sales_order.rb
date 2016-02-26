@@ -2,6 +2,9 @@ require 'json'
 
 module Stitchlabs
   class SalesOrder < Stitchlabs::Base # :nodoc:
+
+    attr_reader :sales_order, :addresses, :contacts, :line_items
+
     def self.open_sales_orders_ids
       body = {
         action: 'read',
@@ -49,6 +52,11 @@ module Stitchlabs
       exist_data = data['SalesOrders'].count
 
       return nil if exist_data == 0
+
+      @addresses = data['Addresses']
+      @contacts = data['Contacts']
+      @line_items = data['SalesOrderLineItems']
+      @sales_order = data['SalesOrders']
       data
     end # find_by
   end
