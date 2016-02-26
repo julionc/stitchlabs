@@ -4,12 +4,12 @@ require 'typhoeus'
 module Stitchlabs
   class Base # :nodoc:
     def self.stitch_request(url, body)
-      stitch_api_url = Stitchlabs.configuration.api_url
+      stitch_api_url = Stitchlabs.configuration.api_url ||= ENV['STITCHLABS_API_URL']
       stitch_endpoint_url = "#{stitch_api_url}/#{url}"
       # puts "URL: #{stitch_endpoint_url}"
 
       headers = {
-        'access_token' => Stitchlabs.configuration.token,
+        'access_token' => Stitchlabs.configuration.token ||= ENV['STITCHLABS_ACCESS_TOKEN'],
         'Content-Type' => 'application/json;charset=UTF-8'
       }
 
