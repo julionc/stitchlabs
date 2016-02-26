@@ -3,7 +3,9 @@ require 'json'
 module Stitchlabs
   class SalesOrder < Stitchlabs::Base # :nodoc:
 
-    attr_reader :sales_order, :addresses, :contacts, :line_items
+    class << self
+      attr_accessor :sales_order, :addresses, :contacts, :line_items
+    end
 
     def self.open_sales_orders_ids
       body = {

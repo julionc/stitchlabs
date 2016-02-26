@@ -53,17 +53,23 @@ Set the variant amount.
 
 ### Packing Slips
 
-Create  a Packing Slip (To add the tracking number)
+Create  a Packing Slip
 
 ```ruby
+@sale_order = Stitchlabs::SalesOrder.find_by_id(123456)
+@address_id = @sale_order.addresses.
 
-sale_order = Stitchlabs::SalesOrder.find_by_id(123456)
 
+params = {
+	my_date: '2015-03-26T08:00:00+0000',
+	address_id: '262724054',
+	contact_id: '245676758',
+	line_item_id: '1205627736',
+	line_item_quantity: '1',
+	line_item_order_sku_id: 'MKPX10', # 2-Axis Joystick
+	sales_order_id: '531936984'
+}
 
-@sku = MSRPIK2 # Make: Raspberry Pi B Starter Kit
-@variant = Stitchlabs::Variant.find_by_sku(@sku)
-@variant.update_amount(100) # units
+packing_slip = Stitchlabs::PackingSlip.new(params)
+# return > 298399708
 ```
-
-
-### 

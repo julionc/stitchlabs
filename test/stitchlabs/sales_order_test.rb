@@ -40,7 +40,7 @@ class SalesOrderTest < ActiveSupport::TestCase
     assert_kind_of Array, sales_orders_ids
   end
 
-  test 'get a sale order by id' do
+  test 'get a sales order by id' do
     raw_data = File.open(__dir__ + '/../fixtures/sale_orders/sale_order_533943058.json')
     url = 'https://api-pub.stitchlabs.com/api2/v2/SalesOrders/detail'
     body = { action: 'read', 'SalesOrders' => [{ id: 533943058 }] }
@@ -52,4 +52,21 @@ class SalesOrderTest < ActiveSupport::TestCase
     first_sales_order = @sales_order['SalesOrders'].first
     assert_equal '533943058', first_sales_order['id']
   end
+
+  test 'get others attributes from a sales order' do
+    raw_data = File.open(__dir__ + '/../fixtures/sale_orders/sale_order_533943058.json')
+    url = 'https://api-pub.stitchlabs.com/api2/v2/SalesOrders/detail'
+    body = { action: 'read', 'SalesOrders' => [{ id: 533943058 }] }
+
+    sale_order_id = 533943058
+    stub_post(url, JSON.dump(body), raw_data)
+    @sales_order = Stitchlabs::SalesOrder.find_by_id(sale_order_id)
+
+    first_sales_order = @sales_order['SalesOrders'].first
+    assert_equal '533943058', first_sales_order['id']
+    assert_kind_of Hash, Stitchlabs::SalesOrder.addresses
+    assert_kind_of Hash, Stitchlabs::SalesOrder.contacts
+    assert_kind_of Hash, Stitchlabs::SalesOrder.line_items
+  end
+
 end
