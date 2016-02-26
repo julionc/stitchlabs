@@ -73,3 +73,14 @@ params = {
 packing_slip = Stitchlabs::PackingSlip.new(params)
 # return > 298399708
 ```
+
+## Package Carrier Type
+
+```ruby
+package_carries = Stitchlabs::PackageCarrierType.all
+```
+
+### Package
+
+First, you need to create a package slip if you want to create a 
+new package with her tracking number correspondingly.

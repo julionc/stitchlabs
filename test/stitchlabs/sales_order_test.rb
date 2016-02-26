@@ -68,5 +68,4 @@ class SalesOrderTest < ActiveSupport::TestCase
     assert_kind_of Hash, Stitchlabs::SalesOrder.contacts
     assert_kind_of Hash, Stitchlabs::SalesOrder.line_items
   end
-
 end

@@ -2,7 +2,6 @@ require 'json'
 
 module Stitchlabs
   class PackingSlip < Stitchlabs::Base # :nodoc:
-
     def initialize(params = [])
       body = {
         action: 'write',

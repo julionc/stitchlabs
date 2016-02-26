@@ -49,5 +49,4 @@ class PackingSlipTest < ActiveSupport::TestCase
     packing_slip = Stitchlabs::PackingSlip.new(params)
     assert '298399708', packing_slip
   end
-
 end
