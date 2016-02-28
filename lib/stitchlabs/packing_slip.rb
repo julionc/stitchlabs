@@ -30,4 +30,7 @@ module Stitchlabs
       data['PackingSlips'].first['id']
     end # initialize
   end
+
+  def get_detail_by_id(packing_slip_id)
+  end # get_detail_by_id
 end

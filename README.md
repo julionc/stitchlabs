@@ -6,7 +6,7 @@ Ruby wrapper for the Stitch Labs API.
 
 You have to generate the Stitch Labs Token.
 You have an option to generate using the Postman method describing in the document.
-See `Stitch Labs Public API Overview - Authentication.pdf`
+See `Stitch Labs Public API Overview - Authentication.pdf` for detail.
 
 ## Usage
 
@@ -33,32 +33,32 @@ sales_orders_ids = Stitchlabs::SalesOrder.open_sales_orders_ids
 
 Get a Sales Order by Id.
 ```ruby
-sale_order = Stitchlabs::SalesOrder.find_by_id(123456)
+sale_order = Stitchlabs::SalesOrder.find_by_id(533943058)
 ```
 
 ### Variants
 
-Get a variant by SKU given.
+Get a variant by SKU.
 ```ruby
-@sku = MKUM1-KT # Ultimaker 3D Printer
+@sku = 'MKUM1-KT' # Ultimaker 3D Printer
 variant = Stitchlabs::Variant.find_by_sku(@sku)
 ```
 
 Set the variant amount.
 ```ruby
-@sku = MSRPIK2 # Make: Raspberry Pi B Starter Kit
+@sku = 'MSRPIK2' # Make: Raspberry Pi B Starter Kit
 @variant = Stitchlabs::Variant.find_by_sku(@sku)
 @variant.update_amount(100) # units
+# return true - if everything is OK
 ```
 
 ### Packing Slips
 
-Create  a Packing Slip
+Create  a Packing Slip.
 
 ```ruby
-@sale_order = Stitchlabs::SalesOrder.find_by_id(123456)
-@address_id = @sale_order.addresses.
-
+@sale_order = Stitchlabs::SalesOrder.find_by_id(533943058)
+@addresses = Stitchlabs::SalesOrder.addresses # You can get the ID here.
 
 params = {
 	my_date: '2015-03-26T08:00:00+0000',
@@ -71,16 +71,47 @@ params = {
 }
 
 packing_slip = Stitchlabs::PackingSlip.new(params)
-# return > 298399708
+# Return > 298493340
 ```
 
 ## Package Carrier Type
 
+Get all Package Carrier Types list
+
 ```ruby
 package_carries = Stitchlabs::PackageCarrierType.all
+```
+
+Find a Specific Carrier Types by name
+
+```ruby
+carrier = Stitchlabs::PackageCarrierType.find('USPS')
+#    {
+#      "created_at": "2016-02-08T22:57:11+00:00",
+#      "deleted": "0",
+#      "id": "1946376",
+#      "links": [],
+#      "name": "USPS",
+#      "updated_at": "2016-02-08T22:57:11+00:00"
+#    }
 ```
 
 ### Package
 
 First, you need to create a package slip if you want to create a 
 new package with her tracking number correspondingly.
+
+```ruby
+package = Stitchlabs::Package.new
+package.ship_date = "2015-03-22T08:00:00+0000"
+package.packing_slips = 298493340
+package.package_carrier_type = 1946376
+package.sales_order = 533943058
+package.tracking_number = 123123123
+package.tracking_link = 'http://google.com'
+package.cost = 0
+package.delivered = 0
+package.save
+
+package_id = package.id
+```

@@ -2,6 +2,7 @@ require 'stitchlabs/configuration'
 require 'stitchlabs/error'
 
 require 'stitchlabs/base'
+require 'stitchlabs/package'
 require 'stitchlabs/package_carrier_type'
 require 'stitchlabs/packing_slip'
 require 'stitchlabs/sales_order'
